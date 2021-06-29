@@ -1,0 +1,14 @@
+create database IT1249;
+use IT1249;
+show tables;
+create table Student(s_id int primary key,s_name varchar(20) not null,age int UNIQUE,height int default 5);
+insert into Student values(1201,"sreeja",19,null),(1202,"hasini",18,5.7),(1203,"akhila",17,null),(1204,"shloka",20,6);
+create table Event(e_id int primary key,e_name varchar(10),c_id int, foreign key(c_id) references Student(s_id));
+insert into Event values(1,"dancing",1201),(2,"singing",1202),(3,"sports",1204),(4,"painting",1203);
+select * from Event;
+select * from Student;
+create table Children(roll int, name varchar(20), check(roll>0));
+insert into Children values(1,"sreeja");
+select * from Children;
+show tables;
+
