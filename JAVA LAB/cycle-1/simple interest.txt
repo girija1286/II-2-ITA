@@ -1,0 +1,17 @@
+import java.util.*;
+import java.lang.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s = new Scanner(System.in);
+	    System.out.println("enter the values of p,t,r : ");
+	    System.out.print("Enter p : ");
+        int p = s.nextInt();
+        System.out.print("Enter r : ");
+        int r = s.nextInt();
+        System.out.print("Enter t : ");
+        int t = s.nextInt();
+        double interest = (p*r*t)/100;
+        System.out.println("Simple Interest : "+interest);
+	}
+}

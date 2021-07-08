@@ -1,0 +1,20 @@
+import java.util.*;
+import java.lang.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s = new Scanner(System.in);
+	    System.out.println("enter the values of p,t,r : ");
+	    System.out.print("Enter p : ");
+        int p = s.nextInt();
+        System.out.print("Enter r : ");
+        int r = s.nextInt();
+        System.out.print("Enter n : ");
+        int n = s.nextInt();
+        System.out.print("Enter t : ");
+        int t = s.nextInt();
+        double x = 1 + (r/n);
+        double y = Math.pow(x, (n*t));
+        System.out.println("Compount Interest is : "+(p+y));
+	}
+}
