@@ -1,0 +1,9 @@
+insert table student(id int primary key,name char(10),cgpa real,height real);
+insert into student values(101,"sreeja",8.9,5), (102,"hasini",9,5.4), (103,"akhila",8.99,5.9);
+create view info as select * from student;
+select * from info;
+insert into info values(104,"shloka",7.8,5.8);
+select name as Student_Name from info where height>5.5;
+update info set height=5.2 where id=101;
+delete from info where height=5.9;
+select * from info;
